@@ -17,9 +17,22 @@
             @if ($errors->any())
                     {{ implode('', $errors->all('<div class="woocommerce-error">:message</div>')) }}
             @endif
-            
+            <div class="margin-bottom-10px">
+            	<div style="display:inline-block">
+
+                	<input type="radio" name="user_type" id="rad_customer" value="Customer" style="margin-right:5px;"/>Customer
+                 <!--   <label for="rad_customer">Customer</label>-->
+                    
+                    <input type="radio" name="user_type" id="rad_customer" value="Designer" style="margin-left: 5px;"/>Designer
+                  <!--  <label for="rad_designer">Designer</label>-->
+                </div>
+            </div>
              <div class="margin-bottom-10px">
            	 {{Form::text('name', '', ['placeholder'=>'Name', 'class'=>'input-text', 'required'=>'true'])}}
+            </div>
+            
+             <div class="margin-bottom-10px">
+           	 {{Form::text('name', '', ['placeholder'=>'Phone Number', 'class'=>'input-text', 'required'=>'true'])}}
             </div>
             
             <div class="margin-bottom-10px">
