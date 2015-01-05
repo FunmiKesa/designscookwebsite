@@ -4,31 +4,17 @@
 	<!-- Head Meta Data -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Designscook | gettting your designs done right</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- Head Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="css/theme-reset.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/dat-menu.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/theme-style.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/shortcodes.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
-    
-    
-    
-     <style type="text/css">
-	.mybutton{
-border: 1px solid rgba(175, 175, 175, 0.75);
-border-radius: 4px;
-background-clip: padding-box;
-background-color: rgba(255, 255, 255, 0.9);
-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.34), 0px 1px 0px rgba(0, 0, 0, 0.1) inset;
-background-image: -moz-linear-gradient(center bottom , rgba(140, 140, 140, 0.29) 0%, rgba(255, 255, 255, 0.29) 100%);	
-}
-	
-	</style>
+	 {{ HTML::style('css/theme-reset.css') }}
+	 {{ HTML::style('css/font-awesome.min.css') }}
+	 {{ HTML::style('css/dat-menu.css') }}
+	 {{ HTML::style('css/css/animate.css') }}
+	 {{ HTML::style('css/theme-style.css') }}
+	 {{ HTML::style('css/shortcodes.css') }}
+	 {{ HTML::style('css/responsive.css') }}
     
 </head>
 <body>
@@ -39,39 +25,49 @@ background-image: -moz-linear-gradient(center bottom , rgba(140, 140, 140, 0.29)
 		<!-- BEGIN #header -->
 		<header id="header">
 			<!-- BEGIN .inner-wrapper -->
-				<div class="inner-wrapper">
+			<div class="inner-wrapper">
 				
 				<!-- BEGIN .logo-image -->
 				<div class="logo-image">
-					<a href="index.html"><img src="images/designscook-logo-278-129.fw.png" alt="" /></a>
+					<a href="/"><img src="images/designscook-logo-278-129.fw.png" alt="" /></a>
 				<!-- END .logo-image -->
 				</div>
 
 				<!-- BEGIN .social-icons -->
 				<div class="social-icons">
 					<div>
-						<a href="http://twitter.com/designscook" target="_blank"><img src="images/social-twitter.png" alt="" /></a>
+						<a href="https://twitter.com/DesignsCook" target="_blank"><img src="images/social-twitter.png" alt="" /></a>
 					</div>
 					<div>
-						<a href="https://www.facebook.com/pages/DesignsCook/1426586880962451" target="_blank"><img src="images/social-facebook.png" alt="" /></a>
+						<a href="https://www.facebook.com/pages/DesignsCook/1426586880962451?ref=hl" target="_blank"><img src="images/social-facebook.png" alt="" /></a>
 					</div>
 					<div>
-						<a href="https://plus.google.com/115870390292957554586/posts" target="_blank"><img src="images/social-google.png" alt="" /></a>
+						<a href="https://plus.google.com/u/0/115870390292957554586/posts" target="_blank"><img src="images/social-google.png" alt="" /></a>
 					</div>
-					<div class="header-search">
+					<!--<div class="header-search">
 						<form action="#">
 							<input type="text" name="s" value="" />
 							<span><b>Search</b>Find content</span>
 							<input type="submit" value="s" />
 						</form>
-					</div>
+					</div>-->
 				<!-- END .social-icons -->
 				</div>
 
 				<!-- BEGIN #main-menu -->
 				<div id="main-menu">
 					<ul class="load-responsive" rel="Main Menu">
-						<li><a href="index.html">Categories</a></li>
+						<!--<li><a href="#">Home</a></li>-->
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><div class="logReg"><a href="#">Login</a></div></li>
+                        <li><div class="logReg"><a href="#">Register</a></div></li>
+                        <li><div id="register_btn"><a href="#">Post A Job</a></div></li>
+                        
+                        <!--<li><a href="#">How It Works</a></li>
+                        <li><a href="#">Contact Us</a></li>
 						<!--<li><a href="blog.html"><span>Blog</span></a>
 							<ul class="sub-menu">
 								<li><a href="blog-sidebar.html">Blog With Sidebar</a></li>
@@ -93,13 +89,10 @@ background-image: -moz-linear-gradient(center bottom , rgba(140, 140, 140, 0.29)
 								</li>
 								<li><a href="#">Buy This Theme</a></li>
 							</ul>
-						</li>-->
-						<li><a href="oven.html">Packages</a></li>
-						<li><a href="photo-gallery.html">The Oven</a></li>
-						<li><a href="contact-us.html">FAQs</a></li>
-						<li><a href="#" class="mybutton">Register</a></li>
-						<li><a href="#" class="mybutton">Login</a></li>
-						<li><a href="#" class="mybutton" style="background: none repeat scroll 0% 0% #A6BE29; color:#fff">Post a Job</a></li>
+						</li>
+						<li><a href="oven.html">The Oven</a></li>
+						<li><a href="photo-gallery.html">Gallery</a></li>
+						<li><a href="contact-us.html">Contacts</a></li>-->
 					</ul>
 				<!-- END #main-menu -->
 				</div>
@@ -112,59 +105,30 @@ background-image: -moz-linear-gradient(center bottom , rgba(140, 140, 140, 0.29)
 
 		<!-- BEGIN .header-bottom -->
 		<div class="header-bottom">
-			<!-- BEGIN .inner-wrapper -->
+			
+            <div class="right-info with-basket">
+                <!--	<a href="#" class="s-border-button" style="background-image:url(../images/panel-background.jpg);">Login</a>
+                    <a href="#" class="s-border-button" style="background-image:url(../images/panel-background.jpg);">Register</a>
+                    <a href="#" class="s-border-button" style="background-image:url(../images/panel-background.jpg);">Post a Job</a>-->
+			</div>
 			<div class="inner-wrapper">
 
 				<ul class="page-tree">
-					@yield('pagetree');
+					@yield('pagetree')
 				</ul>
 
 				<div class="basket">
 					<!-- BEGIN .basket-content -->
-					<div class="basket-content">
-						<ul class="items">
-							<li>
-								<div class="item-controls">
-									<a href="#" class="item-add">+</a>
-									<a href="#" class="item-del">-</a>
-								</div>
-								<a href="#"><img src="images/photos/image-1.jpg" alt="" /><b>Recusabo Sensibus</b><span><b class="item-qnt">2</b>QNT x<span class="item-price">$1,20</span></span></a>
-							</li>
-							<li>
-								<div class="item-controls">
-									<a href="#" class="item-add">+</a>
-									<a href="#" class="item-del">-</a>
-								</div>
-								<a href="#"><img src="images/photos/image-2.jpg" alt="" /><b>Possim Accusata Erroribus</b><span><b class="item-qnt">43</b>QNT x<span class="item-price">$2,50</span></span></a>
-							</li>
-						</ul>
-						<div>
-							<span>Subtotal</span>
-							<span class="right cart-total">$530.99</span>
-						</div>
-						<div class="split">
-							<a href="#" class="action-button size6">View cart</a>
-							<a href="#" class="action-button size6" style="background-color:#85ab2a;">Checkout</a>
-							<div class="clear-float"></div>
-						</div>
-					<!-- END .basket-content -->
-					</div>
-					<a href="#basket-toggle" class="basket-toggle">
-						<span><b>32</b> item(s) - <b>=N=530.99</b></span>
-					</a>
-					<span class="basket-new">
-						<span>New item from oven</span>
-					</span>
+					
 				</div>
 
-				<div class="right-info with-basket">
-					<span>Need Help? &nbsp;<i class="fa fa-phone"></i> <b>0809-800-0901</b> &nbsp; <i class="fa fa-envelope"></i> <b>info@designscook.com</b> </span>
-				</div>
+				
 
 			<!-- END .inner-wrapper -->
 			</div>
 		<!-- END .header-bottom -->
 		</div>
+
 
 
 		<!-- BEGIN .content-wrapper -->
@@ -328,10 +292,6 @@ background-image: -moz-linear-gradient(center bottom , rgba(140, 140, 140, 0.29)
 		var _datMenuSearch = true;
 	</script>
 
-	
-	
-    
-
 	<script src="jscript/jquery-1.10.2.min.js"></script>
 	<script src="jscript/iscroll.js"></script>
 	<script src="jscript/modernizr.custom.50878.js"></script>
@@ -340,7 +300,6 @@ background-image: -moz-linear-gradient(center bottom , rgba(140, 140, 140, 0.29)
 	<script src="jscript/jquery.knob.js"></script>
 	<script src="jscript/theme-script.js"></script>
 	<script src="jscript/dat-menu.js"></script>
-    
-   
+
 </body>
 </html>
